@@ -2,7 +2,6 @@ module.exports = Object.freeze({
     /**
      * ## 账号相关
      * - `COOKIE` 是必填项
-     * - `NOTE` 帐号备注
      * - `NUMBER` 表示是第几个账号
      * - `CLEAR` 是否启用清理功能
      * - `ENABLE_MULTIPLE_ACCOUNT` 是否启用多账号
@@ -19,34 +18,47 @@ module.exports = Object.freeze({
      */
     account_parm: {
         COOKIE: "",
-        NOTE: "",
-        NUMBER: 1,
-        CLEAR: true,
+        NUMBER:1 ,
+        CLEAR:true ,
 
-        ENABLE_MULTIPLE_ACCOUNT: false,
+        ENABLE_MULTIPLE_ACCOUNT: true,
 
         MULTIPLE_ACCOUNT_PARM: "",
-        LOTTERY_LOG_LEVEL: 3,
+        LOTTERY_LOG_LEVEL: 4,
         NOT_GO_LOTTERY: ""
     },
 
     /**
      * 为防止环境变量过长, 请将多账号填在此处
      * 以大括号内容为模板依次复制(包含大括号),逗号分割
-     * ```
-     * ...
-     * NUMBER: 1
-     * ...
-     * NUMBER: 2
-     * ```
      */
     multiple_account_parm: [
-        {
-            COOKIE: "",
-            NOTE: "",
-            NUMBER: 1,
+		 {
+            COOKIE: "DedeUserID=4230222;SESSDATA=4a246a8d%2C1677840332%2Ce5cb1%2A91;bili_jct=f3d9ff189a2c17194656d5673bf33f4a",
+            NUMBER:1,
             CLEAR: true,
-            WAIT: 60 * 1000
+            WAIT: 60 * 10
+        },
+		
+		 {
+            COOKIE: "DedeUserID=2080013907;SESSDATA=b0a14254%2C1678071029%2C9f382*91;bili_jct=2252f6ba1b608056c9adb1e3e82fe1d0",
+            NUMBER:2,
+            CLEAR: true,
+            WAIT: 60 * 10
+        },
+		
+		 {
+            COOKIE: "DedeUserID=1022736884;SESSDATA=bd8b1ce6%2C1657522478%2C60e81a11;bili_jct=90df67bbddc00bf2f2bdd60bb8d2b477",
+            NUMBER:3,
+            CLEAR: true,
+            WAIT: 60 * 10
+        },
+		
+		 {
+            COOKIE: "DedeUserID=1703492465;SESSDATA=a4e43a16%2C1673689081%2C21cef*71;bili_jct=c5a709bf45037d8781270bc81008f8ec",
+            NUMBER:4,
+            CLEAR: true,
+            WAIT: 60 * 10
         }
     ],
 
@@ -68,10 +80,8 @@ module.exports = Object.freeze({
         DD_BOT_SECRET: "",
         QYWX_KEY: "",
         IGOT_PUSH_KEY: "",
-        PUSH_PLUS_TOKEN: "",
+        PUSH_PLUS_TOKEN: "1b32924661814e9cbd831830720ce230",
         PUSH_PLUS_USER: "",
-        QMSG_KEY: "",
-        QMSG_QQ: "",
         SMTP_HOST: "",
         SMTP_PORT: "",
         SMTP_USER: "",
