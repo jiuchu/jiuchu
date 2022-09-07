@@ -8,7 +8,8 @@ module.exports = Object.freeze({
          */
         UIDs: [
             689277291,
-            241675899
+		
+			
         ],
 
         /**
@@ -38,8 +39,6 @@ module.exports = Object.freeze({
          * @property {string} uname
          * @property {Array<{}>} ctrl
          * @property {string} dyid
-         * @property {string} reserve_id
-         * @property {string} reserve_lottery_text
          * @property {string} rid
          * @property {string} des
          * @property {number} type
@@ -52,7 +51,7 @@ module.exports = Object.freeze({
          * @example
          * "https://github.com/spiritLHL/sync_lottery"
          */
-        APIs: [],
+        APIs: ['',],
 
         /**
          * API发送数据类型 {LotteryInfo[]}
@@ -75,7 +74,7 @@ module.exports = Object.freeze({
          * - '01' 只转发非官方抽奖
          * - '11' 都转
          */
-        model: '11',
+        model: '01',
 
         /**
          * - '00'关闭自动评论
@@ -86,17 +85,11 @@ module.exports = Object.freeze({
         chatmodel: '01',
 
         /**
-         * 不参与预约抽奖
-         */
-        disable_reserve_lottery: false,
-
-        /**
          * 检查是否重复转发
          * - 不检查 -1
-         * - 通过是否点赞判断(自动点赞) 0
+         * - 通过是否点赞判断 0
          * - 检索本地dyids文件 1
-         * - 通过是否点赞判断(不自动点赞)+检索本地dyids文件 2
-         * - 通过是否点赞判断(自动点赞)+检索本地dyids文件 3
+         * - 通过是否点赞判断+检索本地dyids文件 2
          */
         check_if_duplicated: 1,
 
@@ -104,7 +97,7 @@ module.exports = Object.freeze({
          * 偷塔模式不检查是否重复转发
          * * 偷塔模式: 临近开奖时参与抽奖
          */
-        sneaktower: true,
+        sneaktopic: true,
 
         /**
          * 屏蔽动态类型
@@ -120,7 +113,6 @@ module.exports = Object.freeze({
          * | 专栏       | `64`   |
          */
         block_dynamic_type: [0],
-
         /**
          * - 动态创建时间
          * - 多少天前
@@ -135,17 +127,17 @@ module.exports = Object.freeze({
         /**
          * - 在uid里检索的页数
          */
-        uid_scan_page: 3,
+        uid_scan_page: 5,
 
         /**
          * - 在tag里检索的页数
          */
-        tag_scan_page: 3,
+        tag_scan_page: 5,
 
         /**
          * - 获取专栏数量
          */
-        article_scan_page: 3,
+        article_scan_page: 5,
 
         /**
          * - 专栏创建时间距离现在的最大天数
@@ -168,7 +160,7 @@ module.exports = Object.freeze({
          *  - 循环等待时间(指所有操作完毕后的休眠时间)
          *  - 单位毫秒
          */
-        lottery_loop_wait: 0,
+        lottery_loop_wait: 300000,
         check_loop_wait: 0,
         clear_loop_wait: 0,
         update_loop_wait: 0,
@@ -190,7 +182,7 @@ module.exports = Object.freeze({
          * - 读取下一页私信间隔
          * - 单位毫秒
          */
-        get_session_wait: 3000,
+        get_session_wait: 1000,
 
         /**
          * - 已读私信间隔
@@ -235,7 +227,7 @@ module.exports = Object.freeze({
         /**
          * - 是否发送随机动态(防止被开奖机过滤)
          */
-        create_dy: false,
+        create_dy: true,
 
         /**
          * 随机动态类型
@@ -265,7 +257,7 @@ module.exports = Object.freeze({
          * - 每转发x条抽奖动态就发送x条随机动态
          * - @example [[10,11,9],[6,8,9]] 每转发9,10,11条抽奖动态就发送6,8,9条随机动态
          */
-        create_dy_mode: [[0], [0]],
+        create_dy_mode: [[3,4,5],[1]],
 
         /**
          * 转发时[at]的用户
@@ -290,22 +282,12 @@ module.exports = Object.freeze({
         blockword: ["脚本", "抽奖号", "钓鱼"],
 
         /**
-         * 转发并评论
-         * - 评论内容与转发内容相同
-         */
-        is_repost_then_chat: false,
-
-        /**
          * 转发评语
-         * 支持变量${uname}
          */
         relay: ['转发动态'],
 
         /**
          * 评论内容
-         * 支持变量${uname}
-         * @example
-         * "祝${uname}早日百大!"
          */
         chat: [
             '[OK]', '[星星眼]', '[歪嘴]', '[喜欢]', '[偷笑]', '[笑]', '[喜极而泣]', '[辣眼睛]', '[吃瓜]', '[奋斗]',
@@ -324,12 +306,12 @@ module.exports = Object.freeze({
         /**
          * 是否关注异常
          */
-        is_exception: false,
+        is_exception: true,
 
         /**
          * 是否关注已达上限
          */
-        is_outof_maxfollow: false,
+        is_outof_maxfollow: true,
 
         /**
          * - 中奖通知关键词(满足一个就推送)
@@ -343,11 +325,6 @@ module.exports = Object.freeze({
             "~你的账号在新设备或平台登录成功",
             "~你预约的直播已开始"
         ],
-
-        /**
-         * 是否发送运行状态通知
-         */
-        notice_running_state: false,
 
         /**
          * - 获取私信页数
@@ -369,7 +346,7 @@ module.exports = Object.freeze({
         /**
          * 清理多少天之前的动态或关注
          */
-        clear_max_day: 30,
+        clear_max_day: 50,
 
         /**
          * - 快速移除关注
