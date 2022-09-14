@@ -97,7 +97,7 @@ module.exports = Object.freeze({
          * 偷塔模式不检查是否重复转发
          * * 偷塔模式: 临近开奖时参与抽奖
          */
-        sneaktopic: true,
+        sneaktopic: false,
 
         /**
          * 屏蔽动态类型
