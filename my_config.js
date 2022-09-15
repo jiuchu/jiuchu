@@ -68,7 +68,8 @@ module.exports = Object.freeze({
          */
         key_words: [
             "[抽奖送揪]|福利",
-            "[转关评粉]|参与"
+            "[转关评粉]|参与",
+
         ],
 
         /**
@@ -85,7 +86,7 @@ module.exports = Object.freeze({
          * - '01'只评论非官抽
          * - '11'都评论
          */
-        chatmodel: '01',
+        chatmodel: '11',
 
         /**
          * 检查是否重复转发
