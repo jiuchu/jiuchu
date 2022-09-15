@@ -74,7 +74,7 @@ module.exports = Object.freeze({
          * - '01' 只转发非官方抽奖
          * - '11' 都转
          */
-        model: '01',
+        model: '11',
 
         /**
          * - '00'关闭自动评论
