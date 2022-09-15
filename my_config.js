@@ -27,6 +27,9 @@ module.exports = Object.freeze({
             '转发抽奖',
             '动态抽奖',
             '抽奖',
+	    '赠书',
+            '送书',
+
         ],
 
         /**
