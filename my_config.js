@@ -16,7 +16,10 @@ module.exports = Object.freeze({
          * 监视的专栏关键词
          */
         Articles: [
-            '抽奖合集'
+            '抽奖合集',
+	    '互动抽奖',
+	  '动态抽奖',
+		'转发抽奖',
         ],
 
         /**
@@ -29,6 +32,7 @@ module.exports = Object.freeze({
             '抽奖',
 	    '赠书',
             '送书',
+		'转发送书',
 
         ],
 
