@@ -80,7 +80,7 @@ module.exports = Object.freeze({
         DD_BOT_SECRET: "",
         QYWX_KEY: "",
         IGOT_PUSH_KEY: "",
-        PUSH_PLUS_TOKEN: "1b32924661814e9cbd831830720ce230",
+        PUSH_PLUS_TOKEN: "491b3fab7acd4f3fb158847c3a55222b",
         PUSH_PLUS_USER: "",
         SMTP_HOST: "",
         SMTP_PORT: "",
