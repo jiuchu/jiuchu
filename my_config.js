@@ -354,7 +354,7 @@ module.exports = Object.freeze({
         /**
          * 清理多少天之前的动态或关注
          */
-        clear_max_day: 40,
+        clear_max_day: 35,
 
         /**
          * - 快速移除关注
