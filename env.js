@@ -54,12 +54,7 @@ module.exports = Object.freeze({
             WAIT: 60 * 10
         },
 		
-		 {
-            COOKIE: "DedeUserID=1703492465;SESSDATA=a4e43a16%2C1673689081%2C21cef*71;bili_jct=c5a709bf45037d8781270bc81008f8ec",
-            NUMBER:4,
-            CLEAR: true,
-            WAIT: 60 * 10
-        }
+		
     ],
 
     /**
