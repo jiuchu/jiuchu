@@ -41,14 +41,14 @@ module.exports = Object.freeze({
         },
 		
 		 {
-            COOKIE: "DedeUserID=2080013907;SESSDATA=f967ac2b%2C1680746456%2Cbb9db*a1;bili_jct=f07d8a0e7792c3a2f3f733f0f14eb816",
+            COOKIE: "DedeUserID=2080013907;SESSDATA=9bedb54d%2C1686579106%2C8eead%2Ac1;bili_jct=adb3b44d8651162c1d3620aa436ed1b9",
             NUMBER:2,
             CLEAR: true,
             WAIT: 60 * 10
         },
 		
 		 {
-            COOKIE: "DedeUserID=1022736884;SESSDATA=a9195496%2C1682233842%2Ca669a%2Aa2;bili_jct=f6b3cf0042e65ce35cb5539eb7fc71ef",
+            COOKIE: "DedeUserID=1022736884;SESSDATA=24987cd4%2C1686588788%2C0a430%2Ac1;bili_jct=7d0caa0ea9bc6dd531d6bc09ebd27487",
             NUMBER:3,
             CLEAR: true,
             WAIT: 60 * 10
