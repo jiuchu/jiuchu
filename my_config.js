@@ -20,6 +20,7 @@ module.exports = Object.freeze({
 	    '互动抽奖',
 	  '动态抽奖',
 		'转发抽奖',
+		'转发送书',
         ],
 
         /**
@@ -287,7 +288,7 @@ module.exports = Object.freeze({
         /**
          * 屏蔽词
          */
-        blockword: ["脚本", "抽奖号", "钓鱼"],
+        blockword: ["脚本", "抽奖号", "钓鱼","机器人","脚本号","抽空气"],
 
         /**
          * 转发评语
