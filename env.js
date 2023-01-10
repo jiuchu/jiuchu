@@ -34,7 +34,7 @@ module.exports = Object.freeze({
      */
     multiple_account_parm: [
 		 {
-            COOKIE: "DedeUserID=4230222;SESSDATA=b24c9742%2C1688829985%2C5b5bb%2A11;bili_jct=d93eec23b09f55dfee15426abf05a73f",
+            COOKIE: "DedeUserID=4230222;SESSDATA=d4188d0a%2C1688926968%2C55861%2A12;bili_jct=82d65fff3c4a4b1ef74a4a058964c958",
             NUMBER:1,
             CLEAR: true,
             WAIT: 60 * 10
